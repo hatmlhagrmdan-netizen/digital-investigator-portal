@@ -1,84 +1,523 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بوابة المحقق الرقمي</title>
 
-<style>
-body{
-font-family:Tahoma,Arial,sans-serif;
-background:#0b1220;
-color:white;
-margin:0;
-text-align:center;
-}
-header{
-background:#0066cc;
-padding:25px;
-}
-section{
-padding:40px 20px;
-}
-.card{
-background:#16213e;
-margin:20px auto;
-padding:20px;
-border-radius:12px;
-max-width:700px;
-}
-a{
-display:inline-block;
-padding:12px 25px;
-background:#00b894;
-color:white;
-text-decoration:none;
-border-radius:8px;
-margin-top:15px;
-}
-footer{
-background:#111;
-padding:20px;
-margin-top:30px;
-}
-</style>
+<title>بوابة المحقق الرقمي | Digital Investigator Portal</title>
+
+<meta name="description" content="بوابة عربية احترافية للأمن السيبراني والتحقيق الرقمي والذكاء الاصطناعي">
+<meta name="keywords" content="الأمن السيبراني, التحقيق الرقمي, OSINT, Digital Forensics, AI">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+<!-- شاشة التحميل -->
+
+<div id="loader">
+
+<div class="loader-box">
+
+<div class="loader-logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+</div>
+
+<h2>بوابة المحقق الرقمي</h2>
+
+<p>Digital Investigator Portal</p>
+
+<div class="loading-bar">
+
+<span></span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- القائمة العلوية -->
+
 <header>
-<h1>🛡️ بوابة المحقق الرقمي</h1>
-<p>منصة عربية للأمن السيبراني والتحقيق الرقمي والذكاء الاصطناعي</p>
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<div>
+
+<h2>بوابة المحقق الرقمي</h2>
+
+<small>Digital Investigator Portal</small>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="#">الرئيسية</a>
+
+<a href="#dashboard">لوحة التحكم</a>
+
+<a href="#academy">الأكاديمية</a>
+
+<a href="#tools">الأدوات</a>
+
+<a href="#articles">المقالات</a>
+
+<a href="#contact">تواصل</a>
+
+</nav>
+
+<div class="nav-buttons">
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<button class="login-btn">
+
+<i class="fa-solid fa-user"></i>
+
+دخول
+
+</button>
+
+</div>
+
 </header>
 
-<section>
+<!-- الصفحة الرئيسية -->
 
-<div class="card">
-<h2>من نحن</h2>
-<p>بوابة عربية متخصصة في الأمن السيبراني والتحقيق الرقمي والأدلة الجنائية الرقمية والذكاء الاصطناعي، تهدف إلى نشر المعرفة وتوفير الأدوات والموارد للباحثين والمهتمين.</p>
+<section class="hero">
 
-<p><strong>المؤسس:</strong> حاتم حسين الحاج رمضان</p>
-</div>
-<div class="card">
-<h2>الأقسام</h2>
-<p>🔹 الأمن السيبراني</p>
-<p>🔹 التحقيق الرقمي</p>
-<p>🔹 الأدلة الجنائية الرقمية</p>
-<p>🔹 الذكاء الاصطناعي</p>
-<p>🔹 الأدوات المجانية</p>
+<div class="hero-content">
+
+<div class="badge">
+
+<i class="fa-solid fa-certificate"></i>
+
+منصة عربية احترافية
+
 </div>
 
-<div class="card">
+<h1>
+
+بوابة المحقق الرقمي
+
+</h1>
+
+<h3>
+
+Digital Investigator Portal
+
+</h3>
+
+<p>
+
+منصة عربية متقدمة متخصصة في الأمن السيبراني، التحقيق الجنائي الرقمي، الأدلة الرقمية، الذكاء الاصطناعي، واستخبارات المصادر المفتوحة، صممت لتكون مركزاً معرفياً متكاملاً للباحثين والمتخصصين.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#dashboard" class="primary-btn">
+
+<i class="fa-solid fa-rocket"></i>
+
+دخول المنصة
+
+</a>
+
+<a href="#academy" class="secondary-btn">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+الأكاديمية
+
+</a>
+
+</div>
+
+<div class="founder">
+
+<h4>المؤسس</h4>
+
+<h2>حاتم حسين الحاج رمضان</h2>
+
+<p>
+
+باحث في الأمن السيبراني والتحقيق الرقمي والذكاء الاصطناعي.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<i class="fa-solid fa-user-secret"></i>
+
+</div>
+
+</section>
+
+<!-- يبدأ الجزء الثاني من هنا -->
+  <!-- لوحة التحكم -->
+
+<section id="dashboard" class="dashboard">
+
+<div class="section-header">
+<h2>لوحة التحكم الرئيسية</h2>
+<p>الوصول السريع إلى جميع أقسام المنصة</p>
+</div>
+
+<div class="dashboard-grid">
+
+<a class="card" href="pages/cyber-security.html">
+<i class="fa-solid fa-shield-halved"></i>
+<h3>الأمن السيبراني</h3>
+<p>الحماية، اختبار الاختراق، تحليل الثغرات، والاستجابة للحوادث.</p>
+</a>
+
+<a class="card" href="pages/digital-forensics.html">
+<i class="fa-solid fa-user-secret"></i>
+<h3>التحقيق الرقمي</h3>
+<p>تحليل الأدلة الرقمية، الأجهزة، والبيانات الجنائية.</p>
+</a>
+
+<a class="card" href="pages/osint.html">
+<i class="fa-solid fa-magnifying-glass"></i>
+<h3>OSINT</h3>
+<p>استخبارات المصادر المفتوحة والبحث والتحليل المتقدم.</p>
+</a>
+
+<a class="card" href="pages/ai.html">
+<i class="fa-solid fa-robot"></i>
+<h3>الذكاء الاصطناعي</h3>
+<p>أفضل أدوات وتقنيات الذكاء الاصطناعي للمحققين.</p>
+</a>
+
+<a class="card" href="pages/tools.html">
+<i class="fa-solid fa-toolbox"></i>
+<h3>الأدوات المجانية</h3>
+<p>مجموعة أدوات احترافية مجانية للأمن والتحقيق الرقمي.</p>
+</a>
+
+<a class="card" href="pages/academy.html">
+<i class="fa-solid fa-graduation-cap"></i>
+<h3>الأكاديمية</h3>
+<p>دورات تدريبية، شهادات، ومسارات تعليمية متخصصة.</p>
+</a>
+
+<a class="card" href="pages/articles.html">
+<i class="fa-solid fa-newspaper"></i>
+<h3>المقالات</h3>
+<p>أحدث المقالات والأبحاث في الأمن السيبراني.</p>
+</a>
+
+<a class="card" href="pages/contact.html">
+<i class="fa-solid fa-envelope"></i>
+<h3>تواصل معنا</h3>
+<p>راسل إدارة المنصة أو أرسل استفساراتك.</p>
+</a>
+
+</div>
+
+</section>
+
+<!-- الإحصائيات -->
+
+<section class="statistics">
+
+<div class="section-header">
+
+<h2>إحصائيات المنصة</h2>
+
+<p>مؤشرات المنصة والخدمات المقدمة</p>
+
+</div>
+
+<div class="stats-grid">
+
+<div class="stat-box">
+<h1>120+</h1>
+<span>أداة مجانية</span>
+</div>
+
+<div class="stat-box">
+<h1>350+</h1>
+<span>مقال احترافي</span>
+</div>
+
+<div class="stat-box">
+<h1>45+</h1>
+<span>دورة تدريبية</span>
+</div>
+
+<div class="stat-box">
+<h1>24/7</h1>
+<span>مراقبة أمنية</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- مركز العمليات الأمنية -->
+
+<section class="soc">
+
+<div class="section-header">
+
+<h2>مركز العمليات الأمنية SOC</h2>
+
+<p>لوحة مراقبة تفاعلية لحالة المنصة</p>
+
+</div>
+
+<div class="soc-grid">
+
+<div class="soc-card">
+
+<h3>حالة الأنظمة</h3>
+
+<ul>
+
+<li>🟢 الخادم الرئيسي: يعمل</li>
+
+<li>🟢 قاعدة البيانات: متصلة</li>
+
+<li>🟢 الحماية السحابية: مفعلة</li>
+
+<li>🟢 جدار الحماية: نشط</li>
+
+<li>🟢 النسخ الاحتياطي: مكتمل</li>
+
+</ul>
+
+</div>
+
+<div class="soc-card">
+
+<h3>أحدث التنبيهات</h3>
+
+<ul>
+
+<li>تم تحديث قواعد الحماية.</li>
+
+<li>فحص أمني مكتمل بنجاح.</li>
+
+<li>لا توجد تهديدات حرجة.</li>
+
+<li>المنصة تعمل بكفاءة.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- يبدأ الجزء الثالث من هنا -->
+  <!-- الأدوات الاحترافية -->
+
+<section id="tools" class="tools">
+
+<div class="section-header">
+<h2>مكتبة الأدوات الاحترافية</h2>
+<p>أدوات مختارة للأمن السيبراني والتحقيق الرقمي</p>
+</div>
+
+<div class="tools-grid">
+
+<div class="tool-card">
+<i class="fa-solid fa-link"></i>
+<h3>تحليل الروابط</h3>
+<p>فحص الروابط المشبوهة وتحليلها قبل فتحها.</p>
+<a href="#">فتح الأداة</a>
+</div>
+
+<div class="tool-card">
+<i class="fa-solid fa-file-shield"></i>
+<h3>تحليل الملفات</h3>
+<p>التحقق من الملفات واكتشاف البرمجيات الضارة.</p>
+<a href="#">فتح الأداة</a>
+</div>
+
+<div class="tool-card">
+<i class="fa-solid fa-globe"></i>
+<h3>OSINT</h3>
+<p>مجموعة أدوات استخبارات المصادر المفتوحة.</p>
+<a href="#">فتح الأداة</a>
+</div>
+
+<div class="tool-card">
+<i class="fa-solid fa-network-wired"></i>
+<h3>تحليل الشبكات</h3>
+<p>مراقبة الشبكات وتحليل حركة البيانات.</p>
+<a href="#">فتح الأداة</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- الأكاديمية -->
+
+<section id="academy" class="academy">
+
+<div class="section-header">
+
+<h2>أكاديمية بوابة المحقق الرقمي</h2>
+
+<p>تعلم من خلال مسارات احترافية متخصصة</p>
+
+</div>
+
+<div class="academy-grid">
+
+<div class="academy-card">
+<i class="fa-solid fa-user-secret"></i>
+<h3>التحقيق الجنائي الرقمي</h3>
+</div>
+
+<div class="academy-card">
+<i class="fa-solid fa-shield-halved"></i>
+<h3>الأمن السيبراني</h3>
+</div>
+
+<div class="academy-card">
+<i class="fa-solid fa-robot"></i>
+<h3>الذكاء الاصطناعي</h3>
+</div>
+
+<div class="academy-card">
+<i class="fa-solid fa-magnifying-glass"></i>
+<h3>OSINT</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- المقالات -->
+
+<section id="articles" class="articles">
+
+<div class="section-header">
+
+<h2>آخر المقالات</h2>
+
+</div>
+
+<div class="articles-grid">
+
+<div class="article-card">
+<h3>أساسيات الأمن السيبراني</h3>
+<p>دليل للمبتدئين لفهم التهديدات وأساليب الحماية.</p>
+</div>
+
+<div class="article-card">
+<h3>التحقيق في الجرائم الرقمية</h3>
+<p>منهجية جمع وتحليل الأدلة الرقمية.</p>
+</div>
+
+<div class="article-card">
+<h3>استخدام الذكاء الاصطناعي في التحقيق</h3>
+<p>كيف تساعد نماذج الذكاء الاصطناعي في التحليل الجنائي.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- عن المؤسس -->
+
+<section class="founder-section">
+
+<div class="section-header">
+
+<h2>عن المؤسس</h2>
+
+</div>
+
+<div class="founder-box">
+
+<h2>حاتم حسين الحاج رمضان</h2>
+
+<h4>Founder & Director</h4>
+
+<p>
+
+مؤسس بوابة المحقق الرقمي، تهدف هذه المنصة إلى نشر المعرفة في الأمن السيبراني، والتحقيق الرقمي، والأدلة الجنائية الرقمية، والذكاء الاصطناعي، وتوفير محتوى عربي احترافي يخدم الباحثين والمتخصصين.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- التواصل -->
+
+<section id="contact" class="contact">
+
+<div class="section-header">
+
 <h2>تواصل معنا</h2>
-<a href="mailto:hatmrmdan1995@gmail.com">راسلنا</a>
+
+</div>
+
+<div class="contact-box">
+
+<a href="mailto:hatmrmdan1995@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+hatmrmdan1995@gmail.com
+</a>
+
+<a href="https://github.com/hatmlhagrmdan-netizen" target="_blank">
+<i class="fa-brands fa-github"></i>
+GitHub
+</a>
+
 </div>
 
 </section>
 
 <footer>
-جميع الحقوق محفوظة © 2026
+
+<h2>🛡 بوابة المحقق الرقمي</h2>
+
+<p>Digital Investigator Portal</p>
+
+<p>المؤسس: <strong>حاتم حسين الحاج رمضان</strong></p>
+
+<p>© 2026 جميع الحقوق محفوظة.</p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
   </html>
+  
