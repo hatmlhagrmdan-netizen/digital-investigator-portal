@@ -1,0 +1,170 @@
+/* ==========================================================
+   بوابة المحقق الرقمي
+   Authentication System
+========================================================== */
+
+import {
+auth
+} from "./firebase-config.js";
+
+import {
+
+createUserWithEmailAndPassword,
+
+signInWithEmailAndPassword,
+
+signOut,
+
+onAuthStateChanged
+
+} from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+/* ==========================
+   إنشاء حساب
+========================== */
+
+export async function register(name,email,password){
+
+try{
+
+const user=await createUserWithEmailAndPassword(
+
+auth,
+
+email,
+
+password
+
+);
+
+console.log("تم إنشاء الحساب");
+
+return user;
+
+}
+
+catch(error){
+
+alert(error.message);
+
+}
+
+}
+
+/* ==========================
+   تسجيل الدخول
+========================== */
+
+export async function login(email,password){
+
+try{
+
+const user=await signInWithEmailAndPassword(
+
+auth,
+
+email,
+
+password
+
+);
+
+console.log("تم تسجيل الدخول");
+
+window.location.href="dashboard.html";
+
+return user;
+
+}
+
+catch(error){
+
+alert(error.message);
+
+}
+
+}
+
+/* ==========================
+   تسجيل الخروج
+========================== */
+
+export async function logout(){
+
+await signOut(auth);
+
+window.location.href="login.html";
+
+}
+
+/* ==========================
+   التحقق من المستخدم
+========================== */
+
+onAuthStateChanged(auth,(user)=>{
+
+if(user){
+
+console.log("مرحباً",user.email);
+
+const username=document.getElementById("username");
+
+if(username){
+
+username.innerText=user.email;
+
+}
+
+}else{
+
+console.log("لا يوجد مستخدم مسجل");
+
+}
+
+});
+
+/* ==========================
+   ربط نموذج تسجيل الدخول
+========================== */
+
+const loginForm=document.getElementById("loginForm");
+
+if(loginForm){
+
+loginForm.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+const email=document.getElementById("email").value;
+
+const password=document.getElementById("password").value;
+
+login(email,password);
+
+});
+
+}
+
+/* ==========================
+   ربط نموذج إنشاء الحساب
+========================== */
+
+const registerForm=document.getElementById("registerForm");
+
+if(registerForm){
+
+registerForm.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+const name=document.getElementById("name").value;
+
+const email=document.getElementById("email").value;
+
+const password=document.getElementById("password").value;
+
+register(name,email,password);
+
+});
+
+}
