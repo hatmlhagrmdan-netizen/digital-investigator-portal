@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hatem-hussein-al-haj-ramadan.com/sitemap.xml
+Sitemap: https://hatmlhagrmdan-netizen.github.io/digital-investigator-portal/sitemap.xml
