@@ -513,3 +513,81 @@ to {
 }
 
 }
+
+/* تصميم مساعد الذكاء الاصطناعي */
+
+.ai-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #00aaff;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 25px #00aaff;
+    z-index: 999;
+}
+
+
+.ai-box {
+    display: none;
+    position: fixed;
+    bottom: 105px;
+    right: 25px;
+    width: 350px;
+    background: #07111f;
+    color: white;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 0 30px rgba(0,170,255,0.5);
+    z-index: 999;
+}
+
+
+.ai-header {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #1e90ff;
+    padding-bottom: 10px;
+}
+
+
+.ai-header span {
+    float: left;
+    cursor: pointer;
+}
+
+
+.ai-chat {
+    height: 220px;
+    overflow-y: auto;
+    margin: 15px 0;
+    background: #101c2e;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.ai-box input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+.ai-box button {
+    width: 25%;
+    padding: 10px;
+    background: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+   }
