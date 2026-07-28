@@ -441,6 +441,35 @@
 
 <script src="assets/js/app.js"></script>
 
+<!-- AI Assistant -->
+<div class="ai-button" onclick="openAI()">
+🤖
+</div>
+
+<div class="ai-box" id="aiBox">
+
+    <div class="ai-header">
+        🤖 مساعد المحقق الرقمي
+        <span onclick="closeAI()">×</span>
+    </div>
+
+    <div class="ai-chat" id="chat">
+        <p>
+        مرحباً بك في بوابة المحقق الرقمي.
+        كيف يمكنني مساعدتك؟
+        </p>
+    </div>
+
+    <input id="userInput" placeholder="اكتب سؤالك هنا">
+
+    <button onclick="sendMessage()">
+    إرسال
+    </button>
+
+</div>
+
+<script src="ai-assistant.js"></script>
+
 </body>
 
-  </html>
+</html>
