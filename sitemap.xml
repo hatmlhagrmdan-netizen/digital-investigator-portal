@@ -2,34 +2,34 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://hatem-hussein-al-haj-ramadan.com/</loc>
-<priority>1.0</priority>
-</url>
+  <url>
+    <loc>https://hatmlhagrmdan-netizen.github.io/digital-investigator-portal/</loc>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-<loc>https://hatem-hussein-al-haj-ramadan.com/articles.html</loc>
-<priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://hatmlhagrmdan-netizen.github.io/digital-investigator-portal/articles.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-<loc>https://hatem-hussein-al-haj-ramadan.com/courses.html</loc>
-<priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://hatmlhagrmdan-netizen.github.io/digital-investigator-portal/courses.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-<loc>https://hatem-hussein-al-haj-ramadan.com/tools.html</loc>
-<priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://hatmlhagrmdan-netizen.github.io/digital-investigator-portal/tools.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-<loc>https://hatem-hussein-al-haj-ramadan.com/ai.html</loc>
-<priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://hatmlhagrmdan-netizen.github.io/digital-investigator-portal/ai.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-<loc>https://hatem-hussein-al-haj-ramadan.com/osint.html</loc>
-<priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://hatmlhagrmdan-netizen.github.io/digital-investigator-portal/osint.html</loc>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
