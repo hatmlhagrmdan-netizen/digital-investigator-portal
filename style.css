@@ -591,3 +591,15 @@ to {
     border-radius: 8px;
     cursor: pointer;
    }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
