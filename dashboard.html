@@ -6,10 +6,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>لوحة التحكم | بوابة المحقق الرقمي</title>
+<title>لوحة تحكم العضو | بوابة المحقق الرقمي</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
+  
 <style>
 
 body{
@@ -66,6 +70,11 @@ text-decoration:none;
 border-radius:8px;
 }
 
+.card a:hover{
+background:#0097a7;
+transition:.3s;
+}
+  
 .profile-card-top{
 width:90%;
 max-width:1200px;
@@ -99,9 +108,36 @@ color:#00e5ff;
 font-size:18px;
 font-weight:bold;
 }
+
+@media (max-width:768px){
+
+.profile-card-top{
+flex-direction:column;
+text-align:center;
+}
+
+.profile-card-top img{
+width:120px;
+height:120px;
+}
+
+.container{
+width:95%;
+padding:20px;
+}
+
+header{
+font-size:22px;
+}
+
+}
   
 </style>
 
+<meta name="description" content="لوحة تحكم أعضاء بوابة المحقق الرقمي.">
+
+<link rel="icon" type="image/png" href="file_000000003d848246aeb46c052206fa1d.png">
+  
 </head>
 
 <body>
@@ -124,10 +160,42 @@ font-weight:bold;
 
 <p>🆔 DIP-000001</p>
 
+<p>✔ الحساب موثق</p>
+
+<p>📅 عضو منذ 2026</p>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+<h2>رقم العضوية</h2>
+<p>DIP-000001</p>
+</div>
+
+<div class="card">
+<h2>الرتبة</h2>
+<p>القائد الأعلى</p>
+</div>
+
+<div class="card">
+<h2>الحالة</h2>
+<p>✔ موثق</p>
+</div>
+
+<div class="card">
+<h2>الصلاحية</h2>
+<p>مدير المنصة</p>
 </div>
 
 </div>
 
+</div>
+  
 <div class="container">
 
 <h2>مرحباً بك في بوابة المحقق الرقمي</h2>
@@ -143,13 +211,13 @@ font-weight:bold;
 <div class="card">
 <h2>تعديل الحساب</h2>
 <p>تعديل بياناتك الشخصية.</p>
-<a href="#">قريباً</a>
+<a href="profile.html">تعديل</a>
 </div>
 
 <div class="card">
 <h2>الشهادات</h2>
 <p>عرض الشهادات الرقمية.</p>
-<a href="#">قريباً</a>
+<a href="certificates.html">فتح</a>
 </div>
 
 <div class="card">
@@ -170,10 +238,69 @@ font-weight:bold;
 <a href="index.html">خروج</a>
 </div>
 
+<div class="card">
+<h2>ملفي الشخصي</h2>
+<p>عرض وتعديل بيانات الحساب.</p>
+<a href="profile.html">فتح</a>
+</div>
+
+<div class="card">
+<h2>الدورات التدريبية</h2>
+<p>متابعة الدورات والشهادات.</p>
+<a href="courses.html">دخول</a>
+</div>
+
+<div class="card">
+<h2>المقالات</h2>
+<p>تصفح أحدث المقالات.</p>
+<a href="articles.html">دخول</a>
+</div>
+
+<div class="card">
+<h2>التحقيقات الرقمية</h2>
+<p>أدوات وأدلة التحقيق الجنائي الرقمي.</p>
+<a href="digital-investigation.html">دخول</a>
+</div>
+
+<div class="card">
+<h2>OSINT</h2>
+<p>جمع المعلومات من المصادر المفتوحة.</p>
+<a href="osint.html">دخول</a>
+</div>
+
+<div class="card">
+<h2>الأمن السيبراني</h2>
+<p>مختبرات وأدوات الأمن السيبراني.</p>
+<a href="cyber.html">دخول</a>
+</div>
+
+  <div class="card">
+<h2>لوحة الإدارة</h2>
+<p>إدارة الأعضاء والمقالات والدورات.</p>
+<a href="admin.html">دخول</a>
+</div>
+
+<div class="card">
+<h2>الإشعارات</h2>
+<p>آخر التنبيهات والرسائل.</p>
+<a href="notifications.html">فتح</a>
+</div>
+
+<div class="card">
+<h2>المختبرات</h2>
+<p>مختبرات الأمن السيبراني والتدريب العملي.</p>
+<a href="labs.html">دخول</a>
+</div>
+
+<div class="card">
+<h2>الإعدادات</h2>
+<p>إعدادات الحساب والمنصة.</p>
+<a href="settings.html">فتح</a>
+</div>
+  
 </div>
 
 </div>
 
 </body>
-
 </html>
