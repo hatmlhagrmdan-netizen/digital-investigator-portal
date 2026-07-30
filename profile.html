@@ -4,27 +4,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>البطاقة التعريفية | بوابة المحقق الرقمي</title>
+
+<title>بطاقة العضوية الرقمية | بوابة المحقق الرقمي</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 background:#0f172a;
 font-family:Cairo,sans-serif;
-color:white;
+color:#fff;
 margin:0;
+padding:40px;
 }
 
 .profile-card{
 
 max-width:700px;
-margin:50px auto;
+margin:auto;
 background:#1e293b;
-padding:30px;
+padding:35px;
 border-radius:20px;
 text-align:center;
 box-shadow:0 0 25px rgba(0,255,255,.25);
@@ -37,12 +39,25 @@ width:180px;
 height:180px;
 border-radius:50%;
 border:5px solid #00e5ff;
+object-fit:cover;
 
 }
 
 .profile-card h1{
 
-margin-top:20px;
+margin:20px 0 10px;
+font-size:32px;
+
+}
+
+.badge{
+
+display:inline-block;
+background:#00bcd4;
+padding:10px 22px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;
 
 }
 
@@ -56,19 +71,8 @@ margin-top:25px;
 .info p{
 
 font-size:18px;
-padding:8px 0;
+padding:12px 0;
 border-bottom:1px solid #334155;
-
-}
-
-.badge{
-
-display:inline-block;
-background:#00bcd4;
-padding:8px 20px;
-border-radius:30px;
-margin-top:20px;
-font-weight:bold;
 
 }
 
@@ -76,11 +80,18 @@ font-weight:bold;
 
 display:inline-block;
 margin-top:30px;
-padding:12px 25px;
+padding:14px 30px;
 background:#00bcd4;
 color:white;
 text-decoration:none;
 border-radius:10px;
+font-size:18px;
+
+}
+
+.btn:hover{
+
+background:#0097a7;
 
 }
 
@@ -92,25 +103,33 @@ border-radius:10px;
 
 <div class="profile-card">
 
-<img src="IMG-20260610-WA0108_1.jpg" alt="حاتم حسين الحاج رمضان">
+<img id="photo" src="images/default-user.png" alt="الصورة الشخصية">
 
-<h1>حاتم حسين الحاج رمضان</h1>
+<h1 id="fullname">عضو جديد</h1>
 
 <div class="badge">
-✓ مؤسس بوابة المحقق الرقمي
+بطاقة العضوية الرقمية
 </div>
 
 <div class="info">
 
-<p><strong>رقم العضوية:</strong> DIP-000001</p>
+<p><strong>رقم العضوية:</strong> <span id="memberid"></span></p>
 
-<p><strong>الرتبة:</strong> مدير المنصة</p>
+<p><strong>اسم المستخدم:</strong> <span id="username"></span></p>
 
-<p><strong>التخصص:</strong> الأمن السيبراني والتحقيق الجنائي الرقمي</p>
+<p><strong>البريد الإلكتروني:</strong> <span id="email"></span></p>
 
-<p><strong>حالة الحساب:</strong> موثق</p>
+<p><strong>رقم الهاتف:</strong> <span id="phone"></span></p>
 
-<p><strong>تاريخ الانضمام:</strong> 2026</p>
+<p><strong>الدولة:</strong> <span id="country"></span></p>
+
+<p><strong>المدينة:</strong> <span id="city"></span></p>
+
+<p><strong>التخصص:</strong> <span id="specialization"></span></p>
+
+<p><strong>حالة الحساب:</strong> عضو جديد</p>
+
+<p><strong>المنصة:</strong> بوابة المحقق الرقمي</p>
 
 </div>
 
@@ -119,6 +138,36 @@ border-radius:10px;
 </a>
 
 </div>
+
+<script>
+
+const data = new URLSearchParams(window.location.search);
+
+document.getElementById("fullname").textContent =
+data.get("fullname") || "عضو جديد";
+
+document.getElementById("username").textContent =
+data.get("username") || "-";
+
+document.getElementById("email").textContent =
+data.get("email") || "-";
+
+document.getElementById("phone").textContent =
+data.get("phone") || "-";
+
+document.getElementById("country").textContent =
+data.get("country") || "-";
+
+document.getElementById("city").textContent =
+data.get("city") || "-";
+
+document.getElementById("specialization").textContent =
+data.get("specialization") || "-";
+
+document.getElementById("memberid").textContent =
+"DIP-" + Math.floor(Math.random() * 900000 + 100000);
+
+</script>
 
 </body>
 
