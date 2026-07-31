@@ -39,6 +39,9 @@ flex-wrap:wrap;
 gap:15px;
 background:#1e293b;
 padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .navbar a{
@@ -90,12 +93,17 @@ padding:25px;
 border-radius:15px;
 text-align:center;
 transition:.3s;
+cursor:pointer;
 }
 
 .card:hover{
 transform:translateY(-8px);
 }
 
+.card a:active{
+transform:scale(.96);
+}
+  
 .card h2{
 margin-top:10px;
 }
@@ -180,6 +188,67 @@ font-size:18px;
 font-weight:bold;
 }
 
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(25px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.container,
+.profile-card-top{
+animation:fadeUp .8s ease;
+  }
+
+.top-btn{
+position:fixed;
+left:25px;
+bottom:25px;
+width:50px;
+height:50px;
+background:#00bcd4;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:22px;
+box-shadow:0 0 20px rgba(0,229,255,.4);
+transition:.3s;
+}
+
+.top-btn:hover{
+background:#0097a7;
+transform:scale(1.1);
+  }
+
+.search-box{
+margin:25px 0;
+}
+
+.search-box input{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+font-size:17px;
+background:#1e293b;
+color:#fff;
+outline:none;
+}
+
+.search-box input:focus{
+box-shadow:0 0 15px rgba(0,229,255,.4);
+  }
+  
 @media (max-width:768px){
 
 .profile-card-top{
@@ -260,6 +329,8 @@ font-size:22px;
 
 <div class="container">
 
+<h2>معلومات العضوية</h2>
+
 <div class="cards">
 
 <div class="card">
@@ -285,10 +356,44 @@ font-size:22px;
 </div>
 
 </div>
+
+<div class="container">
+
+<h2>إحصائيات المنصة</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>150+</h2>
+<p>أداة رقمية</p>
+</div>
+
+<div class="card">
+<h2>320+</h2>
+<p>مقالة متخصصة</p>
+</div>
+
+<div class="card">
+<h2>50+</h2>
+<p>دورة تدريبية</p>
+</div>
+
+<div class="card">
+<h2>1000+</h2>
+<p>عضو مسجل</p>
+</div>
+
+</div>
+
+</div>
   
 <div class="container">
 
 <h2>مرحباً بك في بوابة المحقق الرقمي</h2>
+
+<div class="search-box">
+<input type="text" placeholder="ابحث داخل البوابة...">
+</div>
   
 <div class="cards">
 
@@ -391,6 +496,8 @@ font-size:22px;
 </div>
 
 </div>
+
+<a href="#" class="top-btn">⬆</a>
   
 <footer>
 
@@ -401,7 +508,38 @@ font-size:22px;
 <p>
 تطوير وإدارة: حاتم حسين الحاج رمضان
 </p>
+<div class="container">
 
+<h2>آخر النشاط</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>آخر تسجيل دخول</h2>
+<p>اليوم</p>
+</div>
+
+<div class="card">
+<h2>حالة الحساب</h2>
+<p>نشط</p>
+</div>
+
+<div class="card">
+<h2>عدد الشهادات</h2>
+<p>0</p>
+</div>
+
+<div class="card">
+<h2>مستوى العضوية</h2>
+<p>القائد الأعلى</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+  
 </footer>
   
 </body>
