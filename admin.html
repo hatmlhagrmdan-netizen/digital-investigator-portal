@@ -4,155 +4,170 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>لوحة الإدارة | بوابة المحقق الرقمي</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/dashboard.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/png" href="file_000000003d848246aeb46c052206fa1d.png">
+
+<style>
+
+body{
+margin:0;
+font-family:Cairo,sans-serif;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#00bcd4;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+padding:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(0,229,255,.35);
+}
+
+.card h2{
+margin-top:0;
+}
+
+.card a{
+display:inline-block;
+margin-top:18px;
+padding:10px 20px;
+background:#00bcd4;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.card a:hover{
+background:#0097a7;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:#1e293b;
+color:#bbb;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div class="dashboard">
+<header>
 
-<aside class="sidebar">
-
-<div class="logo">
-
-<i class="fa-solid fa-user-shield"></i>
-
-<h3>لوحة الإدارة</h3>
-
-</div>
-
-<ul>
-
-<li class="active"><i class="fa-solid fa-gauge"></i>الرئيسية</li>
-
-<li><i class="fa-solid fa-newspaper"></i>إدارة المقالات</li>
-
-<li><i class="fa-solid fa-graduation-cap"></i>إدارة الدورات</li>
-
-<li><i class="fa-solid fa-toolbox"></i>إدارة الأدوات</li>
-
-<li><i class="fa-solid fa-users"></i>المستخدمون</li>
-
-<li><i class="fa-solid fa-comments"></i>التعليقات</li>
-
-<li><i class="fa-solid fa-chart-column"></i>الإحصائيات</li>
-
-<li><i class="fa-solid fa-gear"></i>الإعدادات</li>
-
-</ul>
-
-</aside>
-
-<main class="content">
-
-<header class="topbar">
-
-<h2>لوحة التحكم الرئيسية</h2>
+لوحة إدارة بوابة المحقق الرقمي
 
 </header>
 
-<section class="cards">
+<div class="container">
 
-<div class="card-box">
+<h2>مرحباً بالقائد الأعلى</h2>
 
-<h5>المستخدمون</h5>
+<p>
+يمكنك من هنا إدارة جميع أقسام المنصة.
+</p>
 
-<h2>1,248</h2>
+<div class="cards">
+
+<div class="card">
+<h2>إدارة الأعضاء</h2>
+<p>عرض وإدارة جميع الأعضاء.</p>
+<a href="#">فتح</a>
+</div>
+
+<div class="card">
+<h2>إدارة المقالات</h2>
+<p>إضافة وتعديل المقالات.</p>
+<a href="articles.html">فتح</a>
+</div>
+
+<div class="card">
+<h2>إدارة الدورات</h2>
+<p>إضافة الدورات والشهادات.</p>
+<a href="courses.html">فتح</a>
+</div>
+
+<div class="card">
+<h2>إدارة الأدوات</h2>
+<p>تحديث أدوات المنصة.</p>
+<a href="tools.html">فتح</a>
+</div>
+
+<div class="card">
+<h2>إدارة المختبرات</h2>
+<p>إدارة مختبرات الأمن السيبراني.</p>
+<a href="labs.html">فتح</a>
+</div>
+
+<div class="card">
+<h2>الإشعارات</h2>
+<p>إرسال إشعارات لجميع الأعضاء.</p>
+<a href="notifications.html">فتح</a>
+</div>
+
+<div class="card">
+<h2>إعدادات المنصة</h2>
+<p>تعديل إعدادات الموقع.</p>
+<a href="settings.html">فتح</a>
+</div>
+
+<div class="card">
+<h2>العودة للوحة التحكم</h2>
+<p>العودة إلى لوحة العضو.</p>
+<a href="dashboard.html">رجوع</a>
+</div>
 
 </div>
 
-<div class="card-box">
-
-<h5>المقالات</h5>
-
-<h2>320</h2>
-
 </div>
 
-<div class="card-box">
+<footer>
 
-<h5>الدورات</h5>
+© 2026 بوابة المحقق الرقمي<br>
+تطوير وإدارة: حاتم حسين الحاج رمضان
 
-<h2>54</h2>
-
-</div>
-
-<div class="card-box">
-
-<h5>الأدوات</h5>
-
-<h2>186</h2>
-
-</div>
-
-</section>
-
-<section class="recent">
-
-<h3>إضافة مقال جديد</h3>
-
-<form>
-
-<div class="mb-3">
-
-<label>عنوان المقال</label>
-
-<input class="form-control">
-
-</div>
-
-<div class="mb-3">
-
-<label>التصنيف</label>
-
-<select class="form-select">
-
-<option>الأمن السيبراني</option>
-
-<option>الذكاء الاصطناعي</option>
-
-<option>OSINT</option>
-
-<option>الأدلة الرقمية</option>
-
-</select>
-
-</div>
-
-<div class="mb-3">
-
-<label>المحتوى</label>
-
-<textarea class="form-control" rows="8"></textarea>
-
-</div>
-
-<button class="btn btn-info">
-
-<i class="fa-solid fa-floppy-disk"></i>
-
-حفظ المقال
-
-</button>
-
-</form>
-
-</section>
-
-</main>
-
-</div>
-
-<script src="js/app.js"></script>
+</footer>
 
 </body>
 
