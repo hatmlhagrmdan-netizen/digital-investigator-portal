@@ -8,14 +8,12 @@
 
 <title>الشهادات | بوابة المحقق الرقمي</title>
 
-<meta name="description" content="الشهادات الرقمية للأعضاء في بوابة المحقق الرقمي">
-
-<link rel="icon" type="image/png" href="file_000000003d848246aeb46c052206fa1d.png">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 
 <style>
 
@@ -44,45 +42,51 @@ padding:30px;
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
+gap:20px;
 }
 
 .card{
 background:#1e293b;
-padding:25px;
 border-radius:15px;
-text-align:center;
+padding:25px;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
 transition:.3s;
-border:1px solid #00bcd4;
 }
 
 .card:hover{
 transform:translateY(-8px);
-box-shadow:0 0 20px rgba(0,229,255,.3);
+box-shadow:0 0 25px rgba(0,229,255,.35);
 }
 
 .card h2{
-margin-bottom:15px;
+margin-top:0;
 color:#00e5ff;
 }
 
 .card p{
-color:#ddd;
+line-height:1.8;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:10px 20px;
+margin-top:15px;
+padding:10px 18px;
 background:#00bcd4;
 color:#fff;
 text-decoration:none;
 border-radius:8px;
-transition:.3s;
 }
 
 .btn:hover{
 background:#0097a7;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:#1e293b;
+color:#bbb;
 }
 
 </style>
@@ -99,47 +103,57 @@ background:#0097a7;
 
 <div class="container">
 
-<h2 style="text-align:center;">
-شهادات العضو
-</h2>
+<h2>شهادات العضو</h2>
 
 <div class="cards">
 
 <div class="card">
+<h2>دبلوم العلوم الجنائية</h2>
+<p>الحالة: معتمد</p>
+<a href="#" class="btn">عرض</a>
+</div>
+
+<div class="card">
 <h2>الأمن السيبراني</h2>
-<p>شهادة معتمدة في الأمن السيبراني.</p>
+<p>الحالة: معتمد</p>
 <a href="#" class="btn">عرض</a>
 </div>
 
 <div class="card">
-<h2>التحقيق الجنائي الرقمي</h2>
-<p>شهادة في الأدلة الرقمية والتحقيقات.</p>
+<h2>إدارة المشاريع</h2>
+<p>الحالة: معتمد</p>
 <a href="#" class="btn">عرض</a>
 </div>
 
 <div class="card">
-<h2>OSINT</h2>
-<p>شهادة جمع المعلومات من المصادر المفتوحة.</p>
+<h2>القانون الدولي العام</h2>
+<p>الحالة: معتمد</p>
 <a href="#" class="btn">عرض</a>
 </div>
 
 <div class="card">
-<h2>الذكاء الاصطناعي</h2>
-<p>شهادة تطبيقات الذكاء الاصطناعي.</p>
+<h2>القيادة</h2>
+<p>الحالة: معتمد</p>
+<a href="#" class="btn">عرض</a>
+</div>
+
+<div class="card">
+<h2>ICDL</h2>
+<p>الحالة: معتمد</p>
 <a href="#" class="btn">عرض</a>
 </div>
 
 </div>
 
-<div style="text-align:center;margin-top:40px;">
-
-<a href="dashboard.html" class="btn">
-العودة إلى لوحة التحكم
-</a>
-
 </div>
 
-</div>
+<footer>
+
+© 2026 بوابة المحقق الرقمي<br>
+تطوير وإدارة: حاتم حسين الحاج رمضان
+
+</footer>
 
 </body>
-  </html>
+
+</html>
